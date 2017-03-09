@@ -1,7 +1,7 @@
 <template>
     <nav aria-label="...">
         <ul v-if="total_pages > 1" class="pagination">
-            <li v-if="page <= 1">
+            <li v-if="page > 1">
                 <a href="javascript:;" @click="changePage(1)" class="previous">{{ options.first }}</a>
             </li>
             <li v-else class="disabled">
