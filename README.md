@@ -48,11 +48,9 @@ export default {
                 });
             }
         },
-        beforeCreate() {
+        created() {
             this.page = parseInt(this.$route.query.page || this.page);
             this.pagesize = parseInt(this.$route.query.pagesize || this.pagesize);
-        },
-        created() {
             this.loadData();
         },
         components: {
