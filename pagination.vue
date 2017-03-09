@@ -46,7 +46,6 @@
         props: {
             page: {
                 type: Number,
-                default: 1,
                 required: true,
                 validator: value => value > 0
             },
